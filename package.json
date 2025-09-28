@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
     "framer-motion": "^12.23.22",
     "motion": "^12.23.22",
     "next": "15.5.4",

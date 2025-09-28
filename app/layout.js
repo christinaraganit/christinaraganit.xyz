@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grid md:grid-cols-7 m-12 lg:my-12 lg:mx-25 gap-12`}
       >
         <VerticalNav></VerticalNav> {children}
       </body>

@@ -1,8 +1,34 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Argent Pixel CF';
+  src: url('/fonts/ArgentPixelCF-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Argent Pixel CF';
+  src: url('/fonts/ArgentPixelCF-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Louize Display";
+  src: url('/fonts/Louize Display Italic.otf') format('otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('/fonts/SF-Pro.ttf') format("ttf");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0B111A;
+  --foreground: #FFFFFF;
 }
 
 @theme inline {
@@ -12,15 +38,66 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  cursor: url("/sword-cursor.png"), auto;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "SF Pro";
+  line-height: 1.313rem;
+}
+
+.font-pixel {
+  font-family: 'Argent Pixel CF';
+}
+
+.large-title {
+  font-family: 'Argent Pixel CF';
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.title-1 {
+  font-family: 'Argent Pixel CF';
+  font-size: 1.563rem;
+  line-height: 1.938rem;
+}
+
+.ampersand {
+  font-family: "Louize Display";
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.ampersand-sm {
+  font-family: "Louize Display";
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+@layer utilities {
+  .mask-border-sm {
+    mask-image: url(/border-sm.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+
+  .mask-border-prominent {
+    mask-image: url(/border-sm.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+  }
+
+ @media (width >= 80rem) {
+    .mask-border-prominent {
+      mask-image: url(/border-prominent.svg);
+    }
+  }
 }
