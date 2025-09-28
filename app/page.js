@@ -2,16 +2,15 @@ import "./globals.css";
 import Project from "./components/Project";
 
 export default function Home() {
-  return (<main className="col-span-6 md:mx-8 lg:mx-12">
-    <section className="mt-12 mb-24 flex flex-col gap-5 items-center">
-      <h1 className="large-title font-pixel text-center text-balance"><i>Christina</i> is a product designer who
-        <i> writes code & thinks in systems</i></h1>
+  return (<main className="flex flex-col items-center m-8">
+    <section className="max-w-3xl flex flex-col items-center pt-20 pb-28">
+      <h1 className="large-title font-pixel text-center text-balance mb-6"><i>Christina</i> is a product designer who
+        <i> writes code & thinks in systems.</i></h1>
 
-      <p className="text-balance text-center max-w-xl">Open to product design <span className="ampersand">&</span> design engineering roles for Summer 2026.
-        Previously designed at Asana, SAP, and Felix Payment Systems.</p>
+      <p className="text-balance text-center max-w-xl">Open to product design <span className="ampersand">&</span> design engineering internships for Summer 2026!</p>
     </section>
 
-    <section id="projects" className="grid xl:grid-cols-2 gap-8">
+    <section id="projects" className="max-w-8xl grid xl:grid-cols-2 gap-y-8 gap-x-8">
       <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"2025"}>
         <img src="/placeholder.png" />
       </Project>

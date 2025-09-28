@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import VerticalNav from "./components/Navigation";
+import HorizontalNavigation from "./components/HorizontalNavigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,9 +23,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid md:grid-cols-7 m-12 lg:my-12 lg:mx-25 gap-12`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <VerticalNav></VerticalNav> {children}
+        <HorizontalNavigation></HorizontalNavigation>
+        {children}
       </body>
     </html>
   );
