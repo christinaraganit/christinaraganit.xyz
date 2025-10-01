@@ -15,9 +15,11 @@ export default function Home() {
     </section>
 
     <section id="projects" className="max-w-[100rem] grid xl:grid-cols-2 gap-y-8 gap-x-8">
-      <Project role={"Product Design"} title={"Extending ChatGPT's memory into the real world with Tomo, a new consumer AI hardware device"} year={"2025"}>
-        <img src="/placeholder.png" />
-      </Project>
+      {/* <Project role={"Product Design"} title={"Extending ChatGPT's memory into the real world with Tomo, a new consumer AI hardware device"} year={"2025"}>
+        <video autoPlay loop muted className="h-full w-auto">
+          <source src="/projects/gradient.mp4" className="h-full w-auto"></source>
+        </video>
+      </Project> */}
 
       <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"2025"} link="/projects/custom-onboarding-in-otto">
         <motion.img src="/projects/custom-onboarding-in-otto.png" layoutId="otto-hero" id="otto-hero" />
@@ -32,12 +34,17 @@ export default function Home() {
       </Project> */}
 
       <Project role={"Product Design"} title={"Improving mentorship for participants at in-person hackathons"} year={"2024"}>
-        <img src="/placeholder.png" />
+        <img src="/projects/hackerhelper.png" />
+      </Project>
+
+      <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+        <img src="/projects/ddw-thumbnail.png" />
       </Project>
 
       <Project role={<span>Visual Design <span className="ampersand-sm">&</span> UX Design</span>} title={"Designed an accessible online shopping experience for first-time cannabis consumers"} year={"2023"}>
-        <img src="/placeholder.png" />
+        <img src="/projects/cheekys-thumbnail.png" />
       </Project>
+
     </section>
   </main>)
 }

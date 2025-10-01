@@ -33,10 +33,6 @@ export default function Sidequests() {
                 <img src="/projects/hear-me-out-cake.png"></img>
             </Project>
 
-            <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Crafted a visual design identity for Amsterdam-based Dutch Design Week"} year={"2023"}>
-                <img src="/projects/ddw.png"></img>
-            </Project>
-
             <Project role={"UX Design"} title={"Won 1st place at Eunoia UX Hackathon with a rebrand of Proud Zebra’s online storefront "} year={"2023"}>
                 <img src="/projects/proud-zebra.png"></img>
             </Project>
