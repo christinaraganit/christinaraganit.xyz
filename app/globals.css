@@ -27,7 +27,7 @@
 }
 
 :root {
-  --background: #0B111A;
+  --background: #1E2029;
   --foreground: #FFFFFF;
 }
 
@@ -40,6 +40,11 @@
 
 html {
   cursor: url("/sword-cursor.png"), auto;
+  scroll-padding-top: 8rem;
+}
+
+.sword-gauntlet {
+  cursor: url("/gauntlet-cursor.png"), auto;
 }
 
 body {
@@ -47,10 +52,24 @@ body {
   color: var(--foreground);
 }
 
-p {
-  font-family: "SF Pro";
-  line-height: 1.313rem;
+.body-lg {
+  font-family: "SF Pro", sans-serif;
+  font-size: 1.063rem;
+  line-height: 1.638rem;
 }
+
+.body-xl {
+  font-family: "SF Pro", sans-serif;
+  font-size: 1.563rem;
+  line-height: 1.938rem;
+}
+
+.body-2xl {
+  font-family: "SF Pro", sans-serif;
+  font-size: 1.938rem;
+  line-height: 2.375rem;
+}
+
 
 .font-pixel {
   font-family: 'Argent Pixel CF';
@@ -59,13 +78,31 @@ p {
 .large-title {
   font-family: 'Argent Pixel CF';
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 2.75rem;
 }
 
 .title-1 {
   font-family: 'Argent Pixel CF';
   font-size: 1.563rem;
   line-height: 1.938rem;
+}
+
+.title-2 {
+  font-family: 'Argent Pixel CF';
+  font-size: 1.188rem;
+  line-height: 1.5rem;
+}
+
+.headline {
+  font-family: 'Argent Pixel CF';
+  font-size: 1.063rem;
+  line-height: 1.438rem;
+}
+
+.headline-sm {
+  font-family: 'Argent Pixel CF';
+  font-size: 0.875rem;
+  line-height: 1.188;
 }
 
 .ampersand {
@@ -78,6 +115,21 @@ p {
   font-family: "Louize Display";
   font-style: italic;
   font-size: 1.125rem;
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  line-height: 1.188;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: url('/public/scrollbar.svg') no-repeat center center;
+  background-size: cover;
 }
 
 @layer utilities {
