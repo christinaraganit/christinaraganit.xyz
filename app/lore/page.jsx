@@ -1,7 +1,6 @@
 "use client";
 import Navigation from "../../components/Navigation";
 import PixelBorderBox from "../../components/PixelBorderBox";
-import StylizedProfileBorderBox from "../../components/StylizedProfileBorderBox";
 import InventoryBox from "../../components/InventoryBox";
 import Tag from "../../components/Tag";
 import Experience from "../../components/Experience";
@@ -12,7 +11,8 @@ import Award from "../../components/Award";
 
 export default function Lore() {
     return (
-        <main className="max-w-[80rem] lg:h-[calc(100dvh-9rem)] lg:max-h-[calc(100dvh-5rem)] grid lg:grid-cols-2 gap-4 lg:gap-8 items-center m-8 lg:mx-auto">
+        // lg:h-[calc(100dvh-9rem)] lg:max-h-[calc(100dvh-5rem)]
+        <main className="max-w-[80rem]  grid lg:grid-cols-2 gap-4 lg:gap-8 items-center m-8 lg:mx-auto">
 
             <PixelBorderBox className="h-full w-full">
                 <div className="flex flex-col gap-8 w-full h-full p-2">
@@ -103,7 +103,7 @@ export default function Lore() {
                             <Award award={"Judges' Choice Award"} awardedBy={"RootHacks"} year={"2023"} />
                             <Award award={"2nd Place"} awardedBy={"HackED"} year={"2023"} />
                             <Award award={"Computer Systems Award in Tech Entrepreneurship"} awardedBy={"British Columbia Institute of Technology"} year={"2021"} />
-                            <Award award={"President's Entrance Award"} awardedBy={"British Columbia Institute of Technology"} year={"2019"} />
+                            {/* <Award award={"President's Entrance Award"} awardedBy={"British Columbia Institute of Technology"} year={"2019"} /> */}
                             {/* <Award award={"BC Excellence Award"} awardedBy={"Government of British Columbia"} year={"2019"} />
                             <Award award={"District Authority Award"} awardedBy={"Government of British Columbia"} year={"2019"} /> */}
                         </div>

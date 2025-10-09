@@ -1,9 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
@@ -12,9 +11,34 @@ const navLinks = [
     { href: '/lore', label: 'Lore' },
 ];
 
+
 export default function HorizontalNavigation() {
     const pathname = usePathname();
     const [selectedLink, setSelectedLink] = useState(undefined);
+    const [audioEnabled, setAudioEnabled] = useState(true);
+
+    // On mount, read audio setting from localStorage
+    useEffect(() => {
+        const stored = localStorage.getItem('audio-enabled');
+        if (stored === null) {
+            setAudioEnabled(true);
+            localStorage.setItem('audio-enabled', 'true');
+        } else {
+            setAudioEnabled(stored === 'true');
+        }
+    }, []);
+
+    // Update localStorage when toggled
+    const toggleAudio = () => {
+        setAudioEnabled((prev) => {
+            const newValue = !prev;
+            localStorage.setItem('audio-enabled', String(newValue));
+            if (typeof window !== 'undefined') {
+                window.__audioEnabled = newValue;
+            }
+            return newValue;
+        });
+    };
 
     useEffect(() => {
         const current = navLinks.find((link) => link.href === pathname);
@@ -24,28 +48,18 @@ export default function HorizontalNavigation() {
     return (
         <nav className="h-16 flex justify-center w-full max-w-dvw">
             <div className='max-w-[100rem] w-full mx-8 grid sm:grid-cols-3 items-center'>
-                <img src='/pixel-sparkle.svg' alt="A pixel-style sparkle" className="hidden sm:block w-5 h-5"></img>
+                <img src='/pixel-sparkle.svg' alt="A pixel-style sparkle" className="hidden sm:block w-5 h-5" />
 
                 <ul className="list-none flex flex-row gap-6 justify-center items-center h-12">
                     {navLinks.map((navLink) => (
                         <motion.li key={navLink.label} data-href={navLink.href} className="">
-                            {/* {navLink.label === selectedLink ? (<motion.img layout
-                            src="/pointer-icon.svg"
-                            alt="pointer"
-                            className="absolute left-0 w-6 py-2"
-                            layoutId="cursor" id="cursor"
-                        />) : null} */}
-
                             <Link
                                 href={navLink.href}
                                 onClick={() => setSelectedLink(navLink.label)}
                                 className="relative flex flex-col items-center sword-gauntlet"
                             >
                                 <span
-                                    className={`font-pixel transition-colors duration-200
-                                    ? 'text-white'
-                                    : 'text-gray-700'
-                                    }`}
+                                    className={`font-pixel transition-colors duration-200`}
                                 >
                                     {navLink.label}
                                 </span>
@@ -60,6 +74,22 @@ export default function HorizontalNavigation() {
                         </motion.li>
                     ))}
                 </ul>
+
+                <div className='flex justify-end'>
+                    <button
+                        type="button"
+                        aria-label={audioEnabled ? 'Disable audio' : 'Enable audio'}
+                        onClick={toggleAudio}
+                        className="sword-gauntlet hidden sm:block -mr-1 w-7.5 h-7.5 bg-transparent border-none p-0 cursor-pointer"
+                        tabIndex={0}
+                    >
+                        <img
+                            src={audioEnabled ? '/audio.png' : '/audio-off.png'}
+                            alt={audioEnabled ? 'Enabled audio' : 'Disabled audio'}
+                            className="w-7.5 h-7.5"
+                        />
+                    </button>
+                </div>
             </div>
         </nav>
     );

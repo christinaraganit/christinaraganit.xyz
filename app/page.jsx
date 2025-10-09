@@ -22,7 +22,7 @@ export default function Home() {
       </Project> */}
 
       <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"2025"} link="/projects/custom-onboarding-in-otto">
-        <motion.img src="/projects/custom-onboarding-in-otto.png" layoutId="otto-hero" id="otto-hero" />
+        <motion.img src="/projects/custom-onboarding-in-otto.png" layoutId="otto-hero" id="otto-hero" draggable={false} />
       </Project>
 
       <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2025"}>
@@ -34,15 +34,15 @@ export default function Home() {
       </Project> */}
 
       <Project role={"Product Design"} title={"Improving mentorship for participants at in-person hackathons"} year={"2024"}>
-        <img src="/projects/hackerhelper.png" />
+        <img src="/projects/hackerhelper.png" draggable={false} />
       </Project>
 
       <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
-        <img src="/projects/ddw-thumbnail.png" />
+        <img src="/projects/ddw-thumbnail.png" draggable={false} />
       </Project>
 
       <Project role={<span>Visual Design <span className="ampersand-sm">&</span> UX Design</span>} title={"Designed an accessible online shopping experience for first-time cannabis consumers"} year={"2023"}>
-        <img src="/projects/cheekys-thumbnail.png" />
+        <img src="/projects/cheekys-thumbnail.png" draggable={false} />
       </Project>
 
     </section>
