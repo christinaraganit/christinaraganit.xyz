@@ -67,7 +67,7 @@ export default function VerticalNav() {
 
             <motion.ul className="ml-8 list-none p-0 max-w-[10vw]">
                 {sections.map(({ id, label }) => (
-                    <motion.li key={id} className="mb-4 relative">
+                    <motion.li key={id} className="mb-3 relative">
                         {selectedId === id && (
                             <motion.img
                                 layout

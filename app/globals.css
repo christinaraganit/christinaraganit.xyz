@@ -1,7 +1,12 @@
+@font-face {
+  font-family: 'Monogram';
+  src: url('/fonts/monogram.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Argent Pixel CF';
   src: url('/fonts/ArgentPixelCF-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -41,10 +46,24 @@
 html {
   cursor: url("/sword-cursor.png"), auto;
   scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
 }
 
 .sword-gauntlet {
-  cursor: url("/gauntlet-cursor.png"), auto;
+  cursor: url("/gauntlet-cursor.png"), pointer !important;
+}
+
+
+.font-pixel {
+  font-family: 'Argent Pixel CF';
+}
+
+.font-pixel-mono {
+  font-family: 'Monogram', monospace;
+}
+
+button.sword-gauntlet {
+  cursor: url("/gauntlet-cursor.png"), pointer;
 }
 
 body {
