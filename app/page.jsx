@@ -26,7 +26,7 @@ export default function Home() {
       </Project>
 
       <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2025"}>
-        <video src="/projects/output.mp4" loop muted autoPlay />
+        <video src="/projects/curated-work.mp4" loop muted autoPlay />
       </Project>
 
       {/* <Project role={"Product Design"} title={"Shipped a 3× faster check-in system for SFU’s largest hackathon"} year={"2025"}>
