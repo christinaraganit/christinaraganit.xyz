@@ -37,6 +37,7 @@
 :root {
   --background: #1E2029;
   --foreground: #FFFFFF;
+  scrollbar-gutter: stable both-edges;
 }
 
 html {
