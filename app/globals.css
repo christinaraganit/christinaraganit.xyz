@@ -1,10 +1,10 @@
+@import "tailwindcss";
 @font-face {
   font-family: 'Monogram';
   src: url('/fonts/monogram.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
-@import "tailwindcss";
 
 @font-face {
   font-family: 'Argent Pixel CF';
@@ -22,26 +22,19 @@
 
 @font-face {
   font-family: "Louize Display";
-  src: url('/fonts/Louize Display Italic.otf') format('otf');
+  src: url('/fonts/Louize Display Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "SF Pro";
-  src: url('/fonts/SF-Pro-Text-Regular.otf') format("otf");
+  src: url('/fonts/SF-Pro-Text-Regular.otf') format('opentype');
 }
 
 :root {
   --background: #1E2029;
   --foreground: #FFFFFF;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 html {
@@ -52,7 +45,6 @@ html {
 .sword-gauntlet {
   cursor: url("/gauntlet-cursor.png"), pointer !important;
 }
-
 
 .font-pixel {
   font-family: 'Argent Pixel CF';
@@ -69,6 +61,10 @@ button.sword-gauntlet {
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+p {
+  font-family: "SF Pro", sans-serif;
 }
 
 .body-lg {
