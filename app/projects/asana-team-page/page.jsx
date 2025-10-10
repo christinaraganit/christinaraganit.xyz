@@ -56,7 +56,7 @@ export default function TeamPage() {
 
                 <section id="background">
                     <h2 className="headline-sm mb-3">Background</h2>
-                    <p className="body-xl mb-6">On the Team page, the Curated Work section highlights key resources, showcasing the team’s active projects along with relevant links and attachments.
+                    <p className="body-xl mb-6">The Curated Work section in the Team page contains key resources such as the team’s active projects along with relevant links and attachments.
                     </p>
                     <img src="/placeholder.png"></img>
 
@@ -157,7 +157,7 @@ export default function TeamPage() {
                 </div>
 
                 <section id="accessibility-specs" className="flex flex-col gap-4">
-                    <h2 className="headline-sm mb-3">Design Process</h2>
+                    <h2 className="headline-sm mb-3">Accessibility Specs</h2>
 
                     <div className="flex flex-col gap-10 [&>div]:flex [&>div]:flex-col [&>div]:gap-4">
                         <div>
