@@ -2,16 +2,26 @@
 
 import Divider from "../../../components/blocks/Divider";
 import VerticalNav from "../../../components/Navigation";
+import Link from "next/link";
 
-export default function CustomOnboarding() {
-    return (<main className="w-full max-w-dvw flex justify-center">
-        <div className="max-w-[100rem]">
+export default function CustomOnboardingInOtto() {
+    return (<main className="w-full max-w-dvw flex flex-col justify-center">
+        <div>
             <aside id="case-study-navigation" className="fixed left-[5%]">
                 <VerticalNav />
             </aside>
-            <section id="case-study" className="m-8 my-12 max-w-6xl flex flex-col justify-center items-center gap-16">
-                <section id="overview" className="flex flex-col gap-4 max-w-3xl">
-                    <h1 className="large-title mb-6">Empowering internal teams at Asana to drive new user adoption with Custom Onboarding</h1>
+            <section id="case-study" className="m-8 my-12 flex flex-col justify-center items-center gap-16 [&>section]:max-w-3xl [&>div]:max-w-3xl">
+                <div className="flex w-full">
+                    <Link href="/" className="min-[69rem]:hidden flex gap-5 self-start w-full sword-gauntlet">
+                        <img src="/back.svg" className="mt-1" alt="Back" />
+                        <span className="text-lg font-pixel text-white transition-colors duration-200">
+                            Return
+                        </span>
+                    </Link>
+                </div>
+
+                <section id="overview" className="flex flex-col gap-4">
+                    <h1 className="large-title mb-6">Empowering internal teams at Asana to drive user adoption with Custom Onboarding</h1>
                     <div className="grid gap-8 md:grid-cols-4 lg:grid-cols-4">
                         <div className="md:col-span-2">
                             <h2 className="headline-sm mb-1.5">Team</h2>
@@ -33,35 +43,39 @@ export default function CustomOnboarding() {
                     </div>
                     <img src="/projects/custom-onboarding-in-otto.png" id="otto-hero" className="my-4" />
 
-                    <p className="body-lg">As a product design intern at Asana, I led the design direction for a feature within an internal tool that would enable our Customer Success team to create customized onboarding flows for the organizations they work with, making it easier for new users to adopt Asana and start using the platform effectively.</p>
+                    <p className="body-lg">As a product design intern at Asana, I led the design direction for a feature within an internal tool, enabling our Customer Success team to create customized onboarding flows for the organizations they work with, making it easier for new users to adopt Asana and start using the platform effectively.
+                    </p>
 
+
+                    <div className="w-full flex mt-12 justify-center">
+                        <Divider></Divider>
+                    </div>
 
                 </section>
 
-                <Divider></Divider>
 
-                <section id="background" className="max-w-3xl">
+                <section id="background">
                     <h2 className="headline-sm mb-3">Background</h2>
                     <p className="body-xl mb-6">The ideal onboarding experience to Asana looks different for every team. When organizations rely on a single generic flow, employees fail to see Asana’s value, and adoption suffers.</p>
                     <img src="/projects/otto/context.png"></img>
                 </section>
 
-                <section className="max-w-3xl">
+                <section>
                     <div className="grid gap-6 lg:grid-cols-2 items-center">
                         <p className="body-xl">The ideal onboarding experience to Asana looks different for every team. When organizations rely on a single generic flow, employees fail to see Asana’s value, and adoption suffers.</p>
                         <img src="/projects/otto/admin-problem.png"></img>
                     </div>
                 </section>
 
-                <div className="max-w-3xl grid gap-6 lg:grid-cols-2 items-center">
+                <div className="grid gap-6 lg:grid-cols-2 items-center">
                     <p className="body-xl">Customer Success Managers (CSMs) can’t create these flows themselves, since they need to be an Admin at that organization.</p>
                     <img src="/projects/otto/csm-no-access.png"></img>
                 </div>
 
-                <div id="design-challenge" className="max-w-3xl flex flex-col justify-center items-center gap-16">
+                <div id="design-challenge" className="flex flex-col justify-center items-center gap-16">
                     <Divider></Divider>
 
-                    <section className="max-w-3xl text-center mt-20 mb-24">
+                    <section className="text-center lg:mt-20 lg:mb-24">
                         <h2 className="headline mb-4">Design Challenge</h2>
                         <p className="body-2xl text-balance">
                             How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?
@@ -71,7 +85,7 @@ export default function CustomOnboarding() {
                     <Divider></Divider>
                 </div>
 
-                <section id="whats-otto" className="max-w-3xl">
+                <section id="whats-otto">
                     <h2 className="headline-sm mb-3">What's OTTO?</h2>
                     <p className="body-xl text-balance mb-4">
                         CSMs live in this internal tool called OTTO.
@@ -84,7 +98,7 @@ export default function CustomOnboarding() {
                 </section>
 
 
-                <div id="constraints" className="max-w-3xl flex flex-col justify-center items-center gap-16">
+                <div id="constraints" className="flex flex-col justify-center items-center gap-16">
                     <Divider></Divider>
 
                     <section id="constraints" className="max-w-xl">
@@ -114,7 +128,7 @@ export default function CustomOnboarding() {
 
 
 
-                <section id="solution" className="max-w-3xl flex flex-col items-center">
+                <section id="solution" className="flex flex-col items-center">
                     <div className="flex flex-col gap-4">
                         <h2 className="headline-sm">Solution</h2>
                         <p className="body-xl">
@@ -132,7 +146,7 @@ export default function CustomOnboarding() {
                 <Divider></Divider>
 
                 <div id="design-decisions" className="flex flex-col justify-center items-center gap-16">
-                    <section className="max-w-3xl">
+                    <section>
                         <div className="flex flex-row items-center gap-1.5 mb-4">
                             <h2 className="headline-sm">Design Decision</h2>
                             <img src="/1-circled.svg"></img>
@@ -149,7 +163,7 @@ export default function CustomOnboarding() {
 
                     <Divider></Divider>
 
-                    <section className="max-w-3xl">
+                    <section>
                         <div className="flex flex-row items-center gap-1.5 mb-4">
                             <h2 className="headline-sm">Design Decision</h2>
                             <img src="/2-circled.svg"></img>
@@ -161,7 +175,7 @@ export default function CustomOnboarding() {
                         </img>
                     </section>
 
-                    <section className="max-w-3xl">
+                    <section>
                         <p className="body-xl text-balance mb-6">
                             I landed on a dynamic summary where dropdown groups begin collapsed, and only expand when the CSM interacts with its associated step.
                         </p>
@@ -173,7 +187,7 @@ export default function CustomOnboarding() {
 
                     <Divider></Divider>
 
-                    <section className="max-w-3xl">
+                    <section>
                         <div className="flex flex-row items-center gap-1.5 mb-4">
                             <h2 className="headline-sm">Design Decision</h2>
                             <img src="/3-circled.svg"></img>
@@ -189,7 +203,7 @@ export default function CustomOnboarding() {
                         </img>
                     </section>
 
-                    <section className="max-w-3xl">
+                    <section>
                         <p className="body mb-6">
                             I chose the persistent summary because certain configurations in Custom Onboarding depend on one another. The persistent summary will help CSMs create flows more efficiently with the context it provides from previous steps.
                         </p>

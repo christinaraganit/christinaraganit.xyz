@@ -80,7 +80,7 @@ export default function HorizontalNavigation() {
                         type="button"
                         aria-label={audioEnabled ? 'Disable audio' : 'Enable audio'}
                         onClick={toggleAudio}
-                        className="sword-gauntlet hidden sm:block -mr-1 w-7.5 h-7.5 bg-transparent border-none p-0 cursor-pointer"
+                        className="sword-gauntlet hidden sm:block -mr-1.5 w-7.5 h-7.5 bg-transparent border-none p-0 cursor-pointer"
                         tabIndex={0}
                     >
                         <img

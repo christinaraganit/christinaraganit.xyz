@@ -4,11 +4,16 @@ import { usePathname } from 'next/navigation';
 
 export default function Footer() {
     const pathname = usePathname();
-    const maxW = pathname === '/lore' ? 'max-w-[80rem]' : 'max-w-[100rem]';
+    let maxW = 'max-w-[100rem]';
+    if (pathname === '/lore') {
+        maxW = 'max-w-[80rem]';
+    } else if (pathname.startsWith('/projects')) {
+        maxW = 'max-w-3xl';
+    }
     return (
-        <footer className="w-full flex justify-center mt-4 lg:mt-12 p-4 lg:p-8 border-t border-t-[#272935]">
-            <div className={`${maxW} w-full flex justify-between items-center`}>
-                <div className="flex flex-col">
+        <footer className="w-full max-w-dvw flex justify-center mt-4 lg:mt-12 p-8 border-t border-t-[#272935]">
+            <div className={`${maxW} w-full flex flex-col gap-8 md:gap-0 md:flex-row justify-between items-center`}>
+                <div className="flex flex-col text-center md:text-left">
                     <p className="mb-1 text-sm">Coded and handpixelled by</p>
                     <div className="flex gap-2 w-full">
                         <img src="/portrait-sm.png" className="w-5 h-5" />
@@ -16,7 +21,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-5.5'>
+                <div className='flex items-center gap-5.5 ml-3 md:ml-0 order-first md:order-last'>
                     <a className='sword-gauntlet -mt-0.5' href='https://x.com/christinargnt'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12 12"><path fill="#FFF" d="M1 3h1V2h2V1H0v1h1Zm-1 9h1v-1H0Zm1-1h1v-1H1Zm1-1h1V9H2Zm1-1h1V8H3Zm3 2h1V9H6ZM5 9h1V8H5ZM4 8h1V6H4ZM3 6h1V5H3Zm4 6h4v-1h-1v-1H9v1H7ZM2 5h1V3H2Zm6 5h1V8H8ZM7 8h1V7H7ZM6 7h1V5H6ZM5 5h1V4H5ZM4 4h1V2H4Zm3 1h1V4H7Zm1-1h1V3H8Zm1-1h1V2H9Zm1-1h1V1h-1Zm0 0" /></svg>
                     </a>
