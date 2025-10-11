@@ -6,7 +6,7 @@ module.exports = {
         "./public/index.html",
     ],
     safelist: [
-        'sword-gauntlet',
+        'cursor-gauntlet',
     ],
     theme: {
         extend: {

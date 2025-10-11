@@ -57,8 +57,8 @@ export default function VerticalNav() {
     if (!sections.length) return null; // hide nav on non-case study pages
 
     return (
-        <nav className="hidden min-[69rem]:block relative md:my-12 -left-10">
-            <Link href="/" className="flex gap-5 mb-12 sword-gauntlet">
+        <nav className="hidden min-[72rem]:block relative md:my-12 -left-10">
+            <Link href="/" className="flex gap-5 mb-12 cursor-gauntlet">
                 <img src="/back.svg" className="mt-1" alt="Back" />
                 <span className="text-sm font-pixel text-white transition-colors duration-200">
                     Return
@@ -80,7 +80,7 @@ export default function VerticalNav() {
                         <a
                             href={`#${id}`}
                             onClick={() => setSelectedId(id)}
-                            className="sword-gauntlet"
+                            className="cursor-gauntlet"
                         >
                             <span className="text-sm font-pixel leading-[1] text-white transition-colors duration-200">
                                 {label}

@@ -21,11 +21,11 @@ export default function Home() {
         </video>
       </Project> */}
 
-      <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"2025"} link="/projects/custom-onboarding-in-otto">
+      <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"Shipping 2026"} link="/projects/custom-onboarding-in-otto">
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" id="otto-hero" draggable={false} />
       </Project>
 
-      <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2025"} link={"/projects/asana-team-page"}>
+      <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"Shipped 2025"} link={"/projects/asana-team-page"}>
         <video src="/projects/curated-work.mp4" loop muted autoPlay />
       </Project>
 
@@ -33,7 +33,11 @@ export default function Home() {
         <img src="/placeholder.png" />
       </Project> */}
 
-      <Project role={"Product Design"} title={"Improving mentorship for participants at in-person hackathons"} year={"2024"}>
+      <Project role={"Product Design"} title={"Driving efficiency for design & development at Felix with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
+        <img src="/projects/felix-design-system.png" draggable={false} />
+      </Project>
+
+      <Project role={"Product Design"} title={"Improving mentorship for participants at Simon Fraser University's largest in-person hackathon"} year={"2024"}>
         <img src="/projects/hackerhelper.png" draggable={false} />
       </Project>
 

@@ -3,9 +3,9 @@
 import Divider from "../../../components/blocks/Divider";
 import VerticalNav from "../../../components/Navigation";
 import Link from "next/link";
-import PixelBorderBox from "../../../components/PixelBorderBox";
+import DesignChallenge from "../../../components/blocks/DesignChallenge";
 
-export default function TeamPage() {
+export default function Felix() {
     return (<main className="w-full max-w-dvw flex flex-col justify-center">
         <div>
             <aside id="case-study-navigation" className="fixed left-[5%]">
@@ -22,30 +22,29 @@ export default function TeamPage() {
                 </div>
 
                 <section id="overview" className="flex flex-col gap-4">
-                    <h1 className="large-title mb-6">Designed <i>&</i> shipped improvements to Curated Work in Asana’s Team page</h1>
-                    <p className="body-lg">As a product design intern at Asana, I audited the experience of creating and managing Curated Work items in the Team page. I identified inconsistencies and areas of non-compliance with the design system, documented the necessary improvements, and collaborated with developers to implement and ship these changes.
-                    </p>
-
-                    <video src="/projects/curated-work.mp4" loop muted autoPlay className="my-4" />
-
-
+                    <h1 className="large-title mb-6">Driving efficiency for design and development at Felix with a cross-platform design system</h1>
                     <div className="grid gap-8 md:grid-cols-2">
                         <div>
                             <h2 className="headline-sm mb-1.5">Team</h2>
-                            <span className="body-sm">Christina Raganit (Product Design Intern)<br></br>
-                                Chuiee Yang (Design Mentor)<br></br>
-                                Jen Taruno (Product Engineer Intern)<br></br>
-                                Caitlin Kinney (Product Engineer Mentor)
+                            <span className="body-sm">Christina Raganit (Product Design Lead)<br></br>
+                                Head of Marketing (Supervisor)<br></br>
+                                Frontend Development Lead<br></br>
+                                2× Frontend Developers
                             </span>
                         </div>
 
                         <div>
                             <h2 className="headline-sm mb-1.5">Duration</h2>
-                            <span className="body-sm">May–June 2025 (3 weeks, design)
-                                <br></br>July–August 2025 (3 weeks, development)
+                            <span className="body-sm">May-September 2022 (4 months to develop MVP)
+                                <br></br>September 2023–April 2024 (maintenance and improvements)
                             </span>
                         </div>
                     </div>
+
+                    <img src="/projects/felix-design-system.png" />
+
+                    <p className="body-lg">I was the first design hire at Felix Payment Systems, where I built a scalable design system that could support desktop, tablet, and mobile products while following the Felix brand identity. This design system now serves as the single source of truth for all product surfaces, streamlining efficiency for both design and development workflows.
+                    </p>
 
                     <div className="w-full flex mt-12 justify-center">
                         <Divider></Divider>
@@ -74,6 +73,8 @@ export default function TeamPage() {
                     <img src="/placeholder.png"></img>
 
                 </section>
+
+                <DesignChallenge question={"How might I improve the design process so that the frontend developers have an easier time translating the mockups delivered by our design team into frontend code?"}></DesignChallenge>
 
                 <div className="w-full flex justify-center">
                     <Divider></Divider>

@@ -1,5 +1,6 @@
 "use client"
 
+import DesignChallenge from "../../../components/blocks/DesignChallenge";
 import Divider from "../../../components/blocks/Divider";
 import VerticalNav from "../../../components/Navigation";
 import Link from "next/link";
@@ -12,7 +13,7 @@ export default function CustomOnboardingInOtto() {
             </aside>
             <section id="case-study" className="m-8 my-12 flex flex-col justify-center items-center gap-16 [&>section]:max-w-3xl [&>div]:max-w-3xl">
                 <div className="flex w-full">
-                    <Link href="/" className="min-[69rem]:hidden flex gap-5 self-start w-full sword-gauntlet">
+                    <Link href="/" className="min-[72rem]:hidden flex gap-5 self-start w-full cursor-gauntlet">
                         <img src="/back.svg" className="mt-1" alt="Back" />
                         <span className="text-lg font-pixel text-white transition-colors duration-200">
                             Return
@@ -72,18 +73,7 @@ export default function CustomOnboardingInOtto() {
                     <img src="/projects/otto/csm-no-access.png"></img>
                 </div>
 
-                <div id="design-challenge" className="flex flex-col justify-center items-center gap-16">
-                    <Divider></Divider>
-
-                    <section className="text-center lg:mt-20 lg:mb-24">
-                        <h2 className="headline mb-4">Design Challenge</h2>
-                        <p className="body-2xl text-balance">
-                            How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?
-                        </p>
-                    </section>
-
-                    <Divider></Divider>
-                </div>
+                <DesignChallenge question={"How might we enable CSMs to create Custom Onboarding flows on behalf of a company, while protecting said company’s sensitive data?"}></DesignChallenge>
 
                 <section id="whats-otto">
                     <h2 className="headline-sm mb-3">What's OTTO?</h2>

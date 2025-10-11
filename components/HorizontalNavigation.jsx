@@ -56,7 +56,7 @@ export default function HorizontalNavigation() {
                             <Link
                                 href={navLink.href}
                                 onClick={() => setSelectedLink(navLink.label)}
-                                className="relative flex flex-col items-center sword-gauntlet"
+                                className="relative flex flex-col items-center cursor-gauntlet"
                             >
                                 <span
                                     className={`font-pixel transition-colors duration-200`}
@@ -80,7 +80,7 @@ export default function HorizontalNavigation() {
                         type="button"
                         aria-label={audioEnabled ? 'Disable audio' : 'Enable audio'}
                         onClick={toggleAudio}
-                        className="sword-gauntlet hidden sm:block -mr-1.5 w-7.5 h-7.5 bg-transparent border-none p-0 cursor-pointer"
+                        className="cursor-gauntlet hidden sm:block -mr-1.5 w-7.5 h-7.5 bg-transparent border-none p-0 cursor-pointer"
                         tabIndex={0}
                     >
                         <img

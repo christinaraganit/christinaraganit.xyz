@@ -121,7 +121,7 @@ export default function PixelBorderBox({
 
     return (
         <div
-            className={`grid grid-cols-[auto_1fr_auto] grid-rows-[auto_1fr_auto] ${className} ${selectable ? 'sword-gauntlet' : ''}`}
+            className={`grid grid-cols-[auto_1fr_auto] grid-rows-[auto_1fr_auto] ${className} ${selectable ? 'cursor-gauntlet' : ''}`}
             onPointerDown={selectable ? handlePointerDown : undefined}
             onMouseEnter={selectable ? handleMouseEnter : undefined}
             onMouseLeave={selectable ? handleMouseLeave : undefined}

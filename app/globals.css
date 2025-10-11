@@ -45,8 +45,12 @@ html {
   scroll-padding-top: 8rem;
 }
 
-.sword-gauntlet {
+.cursor-gauntlet {
   cursor: url("/gauntlet-cursor.png"), pointer !important;
+}
+
+.cursor-sword {
+  cursor: url("/sword-cursor.png"), auto !important;
 }
 
 .font-pixel {
@@ -57,7 +61,7 @@ html {
   font-family: 'Monogram', monospace;
 }
 
-button.sword-gauntlet {
+button.cursor-gauntlet {
   cursor: url("/gauntlet-cursor.png"), pointer;
 }
 
@@ -80,6 +84,7 @@ p {
   font-family: "SF Pro", sans-serif;
   font-size: 1.563rem;
   line-height: 1.938rem;
+  letter-spacing: -0.06rem;
 }
 
 .body-2xl {
