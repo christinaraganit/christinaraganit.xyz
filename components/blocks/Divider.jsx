@@ -1,5 +1,5 @@
 export default function Divider() {
-    return (<div className="flex max-w-xl w-lg opacity-20 max-w-lg">
+    return (<div className="flex max-w-lg w-full opacity-20 max-w-lg">
         <img src="/divider-start.svg" />
         <div className="bg-[url(/divider-middle.svg)] bg-repeat-x w-full bg-center"></div>
         <img src="/divider-end.svg" />

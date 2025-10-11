@@ -46,7 +46,7 @@ export default function HorizontalNavigation() {
     }, [pathname]);
 
     return (
-        <nav className="h-16 flex justify-center w-full max-w-dvw">
+        <nav className="h-16 flex items-center justify-center w-full max-w-dvw">
             <div className='max-w-[100rem] w-full mx-8 grid sm:grid-cols-3 items-center'>
                 <img src='/pixel-sparkle.svg' alt="A pixel-style sparkle" className="hidden sm:block w-5 h-5" />
 
@@ -56,7 +56,7 @@ export default function HorizontalNavigation() {
                             <Link
                                 href={navLink.href}
                                 onClick={() => setSelectedLink(navLink.label)}
-                                className="relative flex flex-col items-center cursor-gauntlet"
+                                className="relative flex flex-col items-center cursor-gauntlet h-[30px]"
                             >
                                 <span
                                     className={`font-pixel transition-colors duration-200`}
@@ -75,7 +75,7 @@ export default function HorizontalNavigation() {
                     ))}
                 </ul>
 
-                <div className='flex justify-end'>
+                <div className='flex justify-end items-center justify-center'>
                     <button
                         type="button"
                         aria-label={audioEnabled ? 'Disable audio' : 'Enable audio'}
