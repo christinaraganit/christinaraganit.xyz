@@ -1,12 +1,21 @@
-"use client"
-
 import DesignChallenge from "../../../components/blocks/DesignChallenge";
 import Divider from "../../../components/blocks/Divider";
 import VerticalNav from "../../../components/Navigation";
 import Link from "next/link";
+import {isAuthenticated} from "../../../lib/auth";
+import PasswordDialog from "../../../components/password-dialog";
 
-export default function CustomOnboardingInOtto() {
-    return (<main className="w-full max-w-dvw flex flex-col justify-center">
+export default async function CustomOnboardingInOtto() {
+    const hasPassword = await isAuthenticated();
+    if (!hasPassword) {
+      return (
+        <main className="w-full max-w-dvw h-[calc(100vh-200px)] flex flex-col justify-center align-center">
+          <PasswordDialog url="/projects/custom-onboarding-in-otto" />
+        </main>
+      );
+    }
+    return (
+      <main className="w-full max-w-dvw flex flex-col justify-center">
         <div>
             <aside id="case-study-navigation" className="fixed left-[5%]">
                 <VerticalNav />
