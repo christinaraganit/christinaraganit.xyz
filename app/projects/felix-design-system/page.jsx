@@ -5,6 +5,7 @@ import VerticalNav from "../../../components/Navigation";
 import Link from "next/link";
 import DesignChallenge from "../../../components/blocks/DesignChallenge";
 import PixelBorderBox from "../../../components/PixelBorderBox";
+import MediaTag from "../../../components/MediaTag";
 
 export default function Felix() {
     return (<main className="w-full max-w-dvw flex flex-col justify-center">
@@ -59,7 +60,11 @@ export default function Felix() {
                     <p className="body-lg mb-4">Felix Payment Systems is a fintech startup focusing on tech that allows smartphone devices to act as payment terminals without requiring extra hardware.</p>
                     <p className="body-lg mb-6">Their two primary products are Terminal (for payment acceptance) and Portal (for businesses to manage and view records of their transactions).</p>
 
-                    <img src="/placeholder.png"></img>
+                    <div className="aspect-video w-full bg-[#09CEF9] flex items-center justify-center mb-2">
+                        <video src={"/projects/felix/felix-terminal.mp4"} controls muted autoPlay loop></video>
+                    </div>
+                    <MediaTag type={"VIDEO"} caption={"Promotional video for the Felix.Terminal app, depicting setup and payment acceptance flow"} className="mb-8"></MediaTag>
+
 
                     <div className="w-full flex mt-12 justify-center">
                         <Divider></Divider>
@@ -72,7 +77,8 @@ export default function Felix() {
                     <p className="mb-6">Early, I noticed a lack of clear design guidelines for foundations like spacing, color, and typography. These inconsistencies created noticeable visual misalignment across the different products at Felix.
                     </p>
 
-                    <img src="/placeholder.png" className="mb-12"></img>
+                    <img src="/projects/felix/inconsistencies.png" className="mb-2"></img>
+                    <MediaTag type={"IMAGE"} caption={"Example: Inconsistent colors in the sale screens of the Felix.Terminal app"} className="mb-8"></MediaTag>
 
                     <p className="mb-6">
                         I spoke with the frontend development leads and encountered two primary issues:
@@ -96,35 +102,38 @@ export default function Felix() {
 
                 <section id="what-i-did" className="flex flex-col gap-4">
                     <div className="mb-4">
-                        <h2 className="headline-sm mb-3">What I Shipped</h2>
+                        <h2 className="headline-sm mb-3">What I Did</h2>
                         <p>I’m unable to share the original component guidelines due to an NDA, but I’ve recreated key pages for reference. For details on the full project, please reach out via email at <a href="mailto:christinaraganit@gmail.com" className="cursor-gauntlet inline">christinaraganit@gmail.com</a></p>
                     </div>
                     <div className="flex flex-col gap-12 [&>div]:flex [&>div]:flex-col [&>div]:gap-4">
                         <div>
-                            <h3 className="body-xl -mb-1">Audited existing screens, gathering common styles</h3>
+                            <h3 className="body-xl -mb-1">Audited existing screens, gathering common styles and patterns</h3>
                             <p>I audited existing design elements to catalog components and identify inconsistencies that needed resolution before standardizing styles.</p>
-                            <img src="/placeholder.png"></img>
+                            <img src="/projects/felix/audit-components.png"></img>
+                            <img src="/projects/felix/typography-style.png"></img>
                         </div>
 
                         <div>
                             <h3 className="body-xl -mb-1">Created tokens for spacing, colors, and typography</h3>
                             <p> This removed the need for developers to hardcode variables, making maintenance easier and speeding up future prototyping in Figma</p>
+                            <img src="/projects/felix/variables.png"></img>
+                            <img src="/projects/felix/spacing.png"></img>
+                        </div>
+
+                        {/* <div>
+                            <p className="body-xl">Wrote detailed documentation for each of the core screens to ensure seamless implementation</p>
                             <img src="/placeholder.png"></img>
+                        </div> */}
+
+                        <div>
+                            <p className="body-xl">Created a component library and documented the attributes and behaviors of 20 core components</p>
+                            <p>And yes, I wrote these before ChatGPT was a thing!</p>
+                            <img src="/projects/felix/components.png"></img>
                         </div>
 
                         <div>
-                            <p className="body-xl text-balance">Wrote detailed documentation for each of the core screens to ensure seamless implementation</p>
-                            <img src="/placeholder.png"></img>
-                        </div>
-
-                        <div>
-                            <p className="body-xl text-balance">Created a component library and documented the attributes and behaviors of 35+ reusable components</p>
-                            <img src="/placeholder.png"></img>
-                        </div>
-
-                        <div>
-                            <p className="body-xl text-balance">Wrote guidelines to writing better UX copy and error messages</p>
-                            <img src="/placeholder.png"></img>
+                            <p className="body-xl">Wrote guidelines to writing better UX copy and error messages</p>
+                            <img src="/projects/felix/ux-writing.png"></img>
                         </div>
                     </div>
                 </section>
@@ -135,6 +144,12 @@ export default function Felix() {
 
                 <section id="results" className="flex flex-col gap-4">
                     <h2 className="headline-sm -mb-1">Results</h2>
+                    <div className="grid gap-6 lg:grid-cols-2 mb-6">
+                        <p className="title-2">Sped up development by facilitating code reuse</p>
+                        <p className="title-2">Created consistency across Felix products</p>
+                        <p className="title-2">Streamlined new hire onboarding for design and developers</p>
+                        <p className="title-2">Enabled faster prototyping and design delivery</p>
+                    </div>
                     <PixelBorderBox className="text-center">
                         <div className="pt-10 pb-8">
                             <p className="body-xl mb-8 text-balance">The design system documentation Christina wrote has been a total game-changer for the team, making UI development smoother and more efficient than before.</p>
@@ -170,7 +185,7 @@ export default function Felix() {
                         </div>
 
                         <div>
-                            <p className="body-xl">"What the hell is a molecule? And why do I care?"
+                            <p className="body-2xl">"What the hell is a molecule? And why should I care?"
                             </p>
                             <p className="">However, it didn't help developers understand <i>how</i> components were structured. They don’t need to know if a button is an “atom” or a form field is a “molecule”.
                             </p>

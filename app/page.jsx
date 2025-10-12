@@ -33,7 +33,7 @@ export default function Home() {
         <img src="/placeholder.png" />
       </Project> */}
 
-      <Project role={"Product Design"} title={"Driving efficiency for design & development at Felix with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
+      <Project role={"Design Systems"} title={"Driving efficiency for design & development at Felix with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
         <img src="/projects/felix-design-system.png" draggable={false} />
       </Project>
 

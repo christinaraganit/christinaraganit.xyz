@@ -71,7 +71,7 @@ export default function TeamPage() {
                     <p className="mb-6">This deters them from regularly updating this section, which is important as it gives external collaborators visibility into the team’s ongoing projects and overall improves internal communication.
                     </p>
 
-                    <img src="/placeholder.png"></img>
+                    <img src="/projects/curated-work/problem.png"></img>
 
                 </section>
 
@@ -80,26 +80,26 @@ export default function TeamPage() {
                 </div>
 
                 <section id="what-i-shipped" className="flex flex-col gap-4">
-                    <h2 className="headline-sm mb-3">What I Shipped</h2>
+                    <h2 className="headline-sm -mb-1">What I Shipped</h2>
 
                     <div className="flex flex-col gap-10 [&>div]:flex [&>div]:flex-col [&>div]:gap-4">
                         <div>
-                            <p className="body-xl text-balance">Added a modal enabling users to edit the name or description of a Curated Work item.</p>
+                            <p className="body-xl">Added a modal enabling users to edit the name or description of a Curated Work item</p>
+                            <img src="/projects/curated-work/edit-modal.png"></img>
+                        </div>
+
+                        <div>
+                            <p className="body-xl">Added custom name and description support for attachments</p>
                             <img src="/placeholder.png"></img>
                         </div>
 
                         <div>
-                            <p className="body-xl text-balance">Added custom name and description support for attachments.</p>
+                            <p className="body-xl">Improved the efficiency of adding Curated Work items</p>
                             <img src="/placeholder.png"></img>
                         </div>
 
                         <div>
-                            <p className="body-xl text-balance">Improved the efficiency of adding Curated Work items.</p>
-                            <img src="/placeholder.png"></img>
-                        </div>
-
-                        <div>
-                            <p className="body-xl text-balance">Improved compliance with the design system and accessibility guidelines.</p>
+                            <p className="body-xl">Improved compliance with the design system and accessibility guidelines</p>
                             <img src="/placeholder.png"></img>
                         </div>
                     </div>
