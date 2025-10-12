@@ -7,10 +7,8 @@ import PasswordDialog from "../../../components/password-dialog";
 
 export const runtime = 'edge';
 
-export default async function CustomOnboardingInOtto({searchParams}) {
-    const { bypass } = await searchParams;
-    
-    const hasPassword = await isAuthenticated(bypass);
+export default async function CustomOnboardingInOtto() {
+    const hasPassword = await isAuthenticated();
     if (!hasPassword) {
       return (
         <main className="w-full max-w-dvw h-[calc(100vh-200px)] flex flex-col justify-center align-center">
