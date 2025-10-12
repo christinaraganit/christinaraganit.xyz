@@ -60,7 +60,7 @@ export default function Felix() {
                     <p className="body-lg mb-4">Felix Payment Systems is a fintech startup focusing on tech that allows smartphone devices to act as payment terminals without requiring extra hardware.</p>
                     <p className="body-lg mb-6">Their two primary products are Terminal (for payment acceptance) and Portal (for businesses to manage and view records of their transactions).</p>
 
-                    <div className="aspect-video w-full bg-[#09CEF9] flex items-center justify-center mb-2">
+                    <div className="aspect-video w-full bg-[#1AB6FF] flex items-center justify-center mb-2">
                         <video src={"/projects/felix/felix-terminal.mp4"} controls muted autoPlay loop></video>
                     </div>
                     <MediaTag type={"VIDEO"} caption={"Promotional video for the Felix.Terminal app, depicting setup and payment acceptance flow"} className="mb-8"></MediaTag>

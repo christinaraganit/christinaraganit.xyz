@@ -9,6 +9,7 @@ const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/sidequests', label: 'Sidequests' },
     { href: '/lore', label: 'Lore' },
+    { href: 'https://drive.google.com/file/d/117W3Uhd93OZn8JN7znQGSRD4qwwMhw4y/view?usp=sharing', label: "Resume" }
 ];
 
 

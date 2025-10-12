@@ -5,6 +5,7 @@ import InventoryBox from "../../components/InventoryBox";
 import Tag from "../../components/Tag";
 import Experience from "../../components/Experience";
 
+import Album from "../../components/Album";
 import Divider from "../../components/blocks/Divider";
 import { AnimatePresence, motion } from "framer-motion";
 import Award from "../../components/Award";
@@ -13,39 +14,39 @@ export default function Lore() {
     return (
         // lg:h-[calc(100dvh-9rem)] lg:max-h-[calc(100dvh-5rem)]
         <main className="max-w-[80rem]  grid lg:grid-cols-2 gap-4 lg:gap-8 items-center m-8 lg:mx-auto">
-
-            <PixelBorderBox className="h-full w-full">
-                <div className="flex flex-col gap-8 w-full h-full p-2">
-                    <div className="flex flex-col justify-center items-center gap-8">
-                        <img src="/christina-pixel-portrait.png" className="w-[96px] h-auto m-auto" />
-                        <div className="flex flex-col w-full mb-2 text-center">
-                            <h1 className="large-title mb-1">Christina Raganit</h1>
-                            <p className="title-1 italic">Product Designer</p>
-                        </div>
-                    </div>
-
-                    <div className="mx-auto">
-                        <Divider />
-                    </div>
-
-
-                    <div className="flex-1 h-full gap-8 w-full flex flex-col justify-between">
-                        <div className="flex flex-col">
-                            <Tag text={"BIOGRAPHY"} className="w-20 mb-5" />
-                            <p className="mb-4">I fell in love with design in the lecture halls of my computer science classes at BCIT. I initially dreamt of being a software developer so that I can build things that'll make the world a better place but it turns out, I wanted to design them, too.</p>
-
-                            <p className="mb-4">After graduating with my diploma in Computer Systems Technology, I enrolled into the Interactive Arts and Technology program at Simon Fraser University, where I am currently sharpening my skills in design as a fourth-year student, leading the product design team at SFU Surge, and being mentored by Naheel Jawaid at Silicon Valley School of Design.</p>
-
-                            <p className="mb-4">When I am not tinkering away on Figma or attending a hackathon somewhere, you can usually find me...</p>
-
-                            <ul className="list-disc list-inside mb-4">
-                                <li>Losing all my League of Legends games</li>
-                                <li>Jamming to my favorite blink-182 songs</li>
-                                <li>Reading stories about magic and dragons</li>
-                            </ul>
+            <div className="flex flex-col gap-4 lg:gap-8 w-full h-full">
+                <PixelBorderBox className="w-full">
+                    <div className="flex flex-col gap-8 w-full h-full p-2">
+                        <div className="flex flex-col justify-center items-center gap-8">
+                            <img src="/christina-pixel-portrait.png" className="w-[96px] h-auto m-auto" />
+                            <div className="flex flex-col w-full mb-2 text-center">
+                                <h1 className="large-title mb-1">Christina Raganit</h1>
+                                <p className="title-1 italic">Product Designer</p>
+                            </div>
                         </div>
 
-                        {/* <div className="mx-auto">
+                        <div className="mx-auto">
+                            <Divider />
+                        </div>
+
+
+                        <div className="flex-1 h-full gap-8 w-full flex flex-col justify-between">
+                            <div className="flex flex-col">
+                                <Tag text={"BIOGRAPHY"} className="w-20 mb-5" />
+                                <p className="mb-4">I fell in love with design in the lecture halls of my computer science classes at BCIT. I initially dreamt of being a software developer so that I can build things that'll make the world a better place but it turns out, I wanted to design them, too.</p>
+
+                                <p className="mb-4">After graduating with my diploma in Computer Systems Technology, I enrolled into the Interactive Arts and Technology program at Simon Fraser University, where I am currently sharpening my skills in design as a fourth-year student, leading the product design team at SFU Surge, and being mentored by Naheel Jawaid at Silicon Valley School of Design.</p>
+
+                                <p className="mb-4">When I am not tinkering away on Figma or munching on pizza at a hackathon somewhere, you can usually find me...</p>
+
+                                <ul className="list-disc list-inside">
+                                    <li>Losing all my League of Legends games</li>
+                                    <li>Jamming to my favorite blink-182 songs, and</li>
+                                    <li>Reading stories about magic and dragons</li>
+                                </ul>
+                            </div>
+
+                            {/* <div className="mx-auto">
                             <Divider />
                         </div>
 
@@ -73,12 +74,49 @@ export default function Lore() {
                                 </div>
                             </div>
                         </div> */}
+                        </div>
                     </div>
-                </div>
-            </PixelBorderBox>
+                </PixelBorderBox>
+
+                <PixelBorderBox className="w-full">
+                    <div id="library" className="w-full">
+                        <div className="flex justify-between mb-7 items-center">
+                            <Tag text={"LIBRARY"} className="w-16" />
+                            <span className="italic text-sm opacity-60">Christina's favorite albums</span>
+                        </div>
+
+                        <div className="grid lg:grid-cols-3 gap-6">
+                            <Album albumCover={"/library/hybrid-theory.png"} albumTitle={"Hybrid Theory"} artist={"Linkin Park"} releaseYear={"2001"} />
+                            <Album albumCover={"/library/btr.png"} albumTitle={"BTR"} artist={"Big Time Rush"} releaseYear={"2010"} />
+                            <Album albumCover={"/library/requiem.png"} albumTitle={"Requiem"} artist={"Keshi"} releaseYear={"2024"} />
+                        </div>
+                    </div>
+                </PixelBorderBox>
+
+                <PixelBorderBox className="w-full">
+                    <div id="inventory" className="w-full">
+                        <div className="flex justify-between mb-5 items-center">
+                            <Tag text={"INVENTORY"} className="w-16" />
+                            <span className="italic text-sm opacity-60">Hover to inspect the item</span>
+                        </div>
+                        <div className="w-full grid grid-cols-4 sm:grid-cols-6 gap-1">
+                            <InventoryBox icon="/inventory/book.svg" name={"A paperback novel"} description={"On the cover is a cyborg foot wearing a bright red slipper."} />
+
+                            <InventoryBox icon="/inventory/wallet.svg" name={"Christina's wallet"} description={"Wait a minute, there's nothing here!"} />
+                            <InventoryBox icon="/inventory/cookie.svg" name="A chocolate chip cookie
+" description={"It's quite crumbly. She must be saving it for later."} />
+                            <InventoryBox icon="/inventory/mouse.svg" name={"A Logitech Lift Vertical mouse"} description={"It's a strange form factor..."} />
+                            <PixelBorderBox color="light-blue" className="hidden sm:grid"></PixelBorderBox>
+                            <PixelBorderBox color="light-blue" className="hidden sm:grid"></PixelBorderBox>
+                        </div>
+                    </div>
+                </PixelBorderBox>
+
+
+            </div>
 
             <div className="flex flex-col gap-4 lg:gap-8 w-full h-full">
-                <PixelBorderBox className="w-full">
+                <PixelBorderBox className="w-full flex flex-row">
                     <div className="w-full">
                         <Tag text={"EXPERIENCE"} className="w-20 mb-5" />
                         <div className="-mt-1 w-full flex flex-col gap-4">
@@ -86,26 +124,38 @@ export default function Lore() {
                             <Experience role={"UA Design Intern"} company={"SAP"} year={"2024–2025"} />
                             <Experience role={"UX Designer"} company={"Felix Payment Systems"} year={"2022–2024"} />
                             <Experience role={"UX Designer"} company={"Karma Well Health Technologies"} year={"2021–2022"} />
+                            <Experience role={"QA Tester"} company={"Electronic Arts"} year={"2020"} />
+                        </div>
+                    </div>
+
+                </PixelBorderBox>
+
+                <PixelBorderBox className="w-full">
+                    <div className="w-full">
+                        <Tag text={"EDUCATION"} className="w-20 mb-5" />
+                        <div className="-mt-1 w-full flex flex-col gap-4">
+                            <Experience role={"6-month design fellowship by Google Innovation Designer"} company={"Design Fellow at Silicon Valley School of Design"} year={"2025"} />
+                            <Experience role={"Simon Fraser University"} company={"BS, Interactive Arts & Technology"} year={"2021-2025"} />
+                            <Experience role={"British Columbia Institute of Technology"} company={"Diploma in Computer Systems Technology"} year={"2019–2021"} />
                         </div>
                     </div>
                 </PixelBorderBox>
-
-                <PixelBorderBox className="w-full flex-1">
+                <PixelBorderBox className="w-full">
                     <div className="overflow-y-auto h-full w-full">
                         <Tag text={"AWARDS"} className="w-20 mb-5" />
                         <div className="-mt-1 w-full flex flex-col gap-4">
                             <Award award={"2nd Place"} awardedBy={"CreateSC 2025"} year={"2025"} />
-                            {/* <Award award={"Undergraduate Open Scholarship"} awardedBy={"Simon Fraser University"} year={"2024"} />
-                            <Award award={"Nancy Morrison and Fraser Green Special Abilities Award"} awardedBy={"Simon Fraser University"} year={"2023"} />
-                            <Award award={"Undergraduate Open Scholarship"} awardedBy={"Simon Fraser University"} year={"2023"} /> */}
+                            <Award award={"Undergraduate Open Scholarship"} awardedBy={"Simon Fraser University"} year={"2024"} />
+                            {/* <Award award={"Nancy Morrison and Fraser Green Special Abilities Award"} awardedBy={"Simon Fraser University"} year={"2023"} /> */}
+                            {/* <Award award={"Undergraduate Open Scholarship"} awardedBy={"Simon Fraser University"} year={"2023"} /> */}
                             <Award award={"2nd Place & Best UI/UX Design"} awardedBy={"StormHacks"} year={"2023"} />
                             <Award award={"1st Place & Best Design"} awardedBy={"cmd-f"} year={"2023"} />
                             <Award award={"Judges' Choice Award"} awardedBy={"RootHacks"} year={"2023"} />
                             <Award award={"2nd Place"} awardedBy={"HackED"} year={"2023"} />
                             <Award award={"Computer Systems Award in Tech Entrepreneurship"} awardedBy={"British Columbia Institute of Technology"} year={"2021"} />
-                            {/* <Award award={"President's Entrance Award"} awardedBy={"British Columbia Institute of Technology"} year={"2019"} /> */}
-                            {/* <Award award={"BC Excellence Award"} awardedBy={"Government of British Columbia"} year={"2019"} />
-                            <Award award={"District Authority Award"} awardedBy={"Government of British Columbia"} year={"2019"} /> */}
+                            <Award award={"President's Entrance Award"} awardedBy={"British Columbia Institute of Technology"} year={"2019"} />
+                            <Award award={"BC Excellence Award"} awardedBy={"Government of British Columbia"} year={"2019"} />
+                            <Award award={"District Authority Award"} awardedBy={"Government of British Columbia"} year={"2019"} />
                         </div>
                     </div>
                 </PixelBorderBox>

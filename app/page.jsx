@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (<main className="flex flex-col items-center m-8">
     <section className="max-w-3xl flex flex-col items-center pt-16 pb-28">
-      <h1 className="large-title font-pixel text-center text-balance mb-6">Christina is a product designer who
+      <h1 className="large-title font-pixel text-center text-balance mb-5">Christina is a product designer who
         <i> writes code & thinks in systems.</i></h1>
 
-      <p className="text-balance text-center max-w-xl">Open to product design <span className="ampersand">&</span> design engineering internships for Summer 2026!</p>
+      <p className="body-lg text-center max-w-2xl text-balance">Open to product design <span className="ampersand">&</span> design engineering internships for Summer 2026!</p>
     </section>
 
     <section id="projects" className="max-w-[100rem] grid xl:grid-cols-2 gap-y-8 gap-x-8">
@@ -38,15 +38,11 @@ export default function Home() {
       </Project>
 
       <Project role={"Product Design"} title={"Improving mentorship for participants at Simon Fraser University's largest in-person hackathon"} year={"2024"}>
-        <img src="/projects/hackerhelper.png" draggable={false} />
+        <img src="/projects/hackerhelper-thumbnail.png" draggable={false} />
       </Project>
 
       <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
         <img src="/projects/ddw-thumbnail.png" draggable={false} />
-      </Project>
-
-      <Project role={<span>Visual Design <span className="ampersand-sm">&</span> UX Design</span>} title={"Designed an accessible online shopping experience for first-time cannabis consumers"} year={"2023"}>
-        <img src="/projects/cheekys-thumbnail.png" draggable={false} />
       </Project>
 
     </section>

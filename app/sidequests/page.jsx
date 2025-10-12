@@ -40,6 +40,10 @@ export default function Sidequests() {
             <Project role={<span>UX Design <span className="ampersand-sm">&</span> Frontend Development</span>} title={"Won 1st place at cmd-f with an app that enables victims to discreetly report incidents of domestic violence"} year={"2023"}>
                 <img src="/projects/chow-now.png"></img>
             </Project>
+
+            {/* <Project role={<span>Visual Design <span className="ampersand-sm">&</span> UX Design</span>} title={"Designed an accessible online shopping experience for first-time cannabis consumers"} year={"2023"}>
+                <img src="/projects/cheekys.png" draggable={false} />
+            </Project> */}
         </section>
     </main>);
 }

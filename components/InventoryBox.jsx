@@ -115,7 +115,7 @@ export default function InventoryBox({ icon, name, description, className = "", 
                     style={menuStyle}
                 >
                     <PixelBorderBox color="selected" selected={true} className="shadow-2xl w-fit">
-                        <div className="-m-2 w-48 relative z-20">
+                        <div className="-m-2 w-48 relative z-40">
                             <h1 className="title-2 mb-1.5">{name}</h1>
                             <p className="text-sm">{description}</p>
                         </div>

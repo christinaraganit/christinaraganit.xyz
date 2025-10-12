@@ -84,14 +84,14 @@ p {
   font-family: "SF Pro", sans-serif;
   font-size: 1.563rem;
   line-height: 1.938rem;
-  letter-spacing: -0.06rem;
+  letter-spacing: -0.0525rem;
 }
 
 .body-2xl {
   font-family: "SF Pro", sans-serif;
   font-size: 1.938rem;
   line-height: 2.375rem;
-  letter-spacing: -0.06rem;
+  letter-spacing: -0.0725rem;
 }
 
 .font-pixel {
