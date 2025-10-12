@@ -5,6 +5,8 @@ import Link from "next/link";
 import {isAuthenticated} from "../../../lib/auth";
 import PasswordDialog from "../../../components/password-dialog";
 
+export const runtime = 'nodejs';
+
 export default async function CustomOnboardingInOtto() {
     const hasPassword = await isAuthenticated();
     if (!hasPassword) {
