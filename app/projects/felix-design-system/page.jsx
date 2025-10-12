@@ -181,7 +181,7 @@ export default function Felix() {
                             </p>
                             <p className="mb-2">Early on, I adopted Brad Frost’s Atomic Design methodology, labeling components as “atoms”, “molecules”, and “organisms”. This was helpful for me learning about how to structure components.
                             </p>
-                            <img src="/placeholder.png"></img>
+                            <img src="/projects/felix/atomic-design.png"></img>
                         </div>
 
                         <div>
@@ -190,17 +190,17 @@ export default function Felix() {
                             <p className="">However, it didn't help developers understand <i>how</i> components were structured. They don’t need to know if a button is an “atom” or a form field is a “molecule”.
                             </p>
                             <p>Rather than forcing the framework, I ended up documenting components in a way that made sense to the team. What made sense to them was an Anatomy of each component.</p>
-                            <img src="/placeholder.png"></img>
+                            <img src="/projects/felix/text-field-anatomy.png"></img>
                         </div>
 
-                        <div>
+                        {/* <div>
                             <p className="body-xl">Iterating on spacing tokens to support evolving needs and improve clarity
                             </p>
                             <p className="">As the needs of the company evolved, so did the design system. An iteration I made was on the spacing system.
                             </p>
                             <p>Developers expressed that they found the naming conventions to be unintuitive. They’re unsure, by looking at the variable name, what number it’d correspond to. The current spacing system also didn’t support larger variables to accommodate larger screen sizes.</p>
                             <img src="/placeholder.png"></img>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
