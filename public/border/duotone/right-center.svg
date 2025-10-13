@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_151_22426)">
+<path d="M24 26L22 26L22 -6L24 -6L24 -14L16 -14L16 -12L-16 -12L-16 -14L-24 -14L-24 -6L-22 -6L-22 26L-24 26L-24 34L-16 34L-16 32L16 32L16 34L24 34L24 26ZM16 26L16 30L-16 30L-16 26L-20 26L-20 -6L-16 -6L-16 -10L16 -10L16 -6L20 -6L20 26L16 26ZM18 28L22 28L22 32L18 32L18 28ZM-18 32L-22 32L-22 28L-18 28L-18 32ZM18 -12L22 -12L22 -8L18 -8L18 -12ZM-18 -8L-22 -8L-22 -12L-18 -12L-18 -8Z" fill="#414458"/>
+<path d="M14 24L18 24L18 -4L14 -4L14 -8L-14 -8L-14 -4L-18 -4L-18 24L-14 24L-14 28L14 28L14 24Z" fill="#272935"/>
+</g>
+<defs>
+<clipPath id="clip0_151_22426">
+<rect width="24" height="24" fill="white" transform="translate(24) rotate(90)"/>
+</clipPath>
+</defs>
+</svg>

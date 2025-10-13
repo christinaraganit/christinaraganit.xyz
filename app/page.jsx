@@ -21,8 +21,8 @@ export default function Home() {
         </video>
       </Project> */}
 
-      <Project role={"Product Design"} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"Shipping 2026"} link="/projects/custom-onboarding-in-otto">
-        <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" id="otto-hero" draggable={false} />
+      <Project role={"Product Design"} passwordProtected={true} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"Shipping 2026"} link="/projects/custom-onboarding-in-otto">
+        <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
 
       <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"Shipped 2025"} link={"/projects/asana-team-page"}>

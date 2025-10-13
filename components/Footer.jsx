@@ -11,7 +11,7 @@ export default function Footer() {
         maxW = 'max-w-3xl';
     }
     return (
-        <footer className="w-full max-w-dvw flex justify-center mt-4 lg:mt-12 p-8 border-t border-t-[#272935]">
+        <footer className="w-full max-w-dvw flex justify-center mt-4 lg:h-32 lg:mt-12 p-8 border-t border-t-[#272935]">
             <div className={`${maxW} w-full flex flex-col gap-8 md:gap-0 md:flex-row justify-between items-center`}>
                 <div className="flex flex-col text-center md:text-left">
                     <p className="mb-1 text-sm">Coded and handpixelled by</p>

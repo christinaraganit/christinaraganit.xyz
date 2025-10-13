@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export default function Project({ title, role, year, children, prominent = false, link }) {
+export default function Project({ title, passwordProtected = false, role, year, children, prominent = false, link }) {
     const Container = link ? Link : 'div';
     const containerProps = link ? { href: link } : {};
 
     return (<div className={`${prominent ? 'col-span-1 xl:col-span-2' : 'col-span-1'}`}>
         <Container {...containerProps} className={``}>
             <div
-                className={`aspect-video w-full h-auto ${link ? 'cursor-gauntlet' : ''} ${prominent ? 'mask-border-prominent' : 'mask-border-sm'} mask-no-repeat mask-center mask-size-contain`}
+                className={`aspect-video w-full h-auto ${link ? 'cursor-gauntlet' : ''} ${passwordProtected ? 'cursor-lock' : ''} ${prominent ? 'mask-border-prominent' : 'mask-border-sm'} mask-no-repeat mask-center mask-size-contain`}
             >
                 {children}
             </div>

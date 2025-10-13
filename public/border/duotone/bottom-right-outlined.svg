@@ -1,0 +1,20 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_151_22507)">
+<path d="M-16 24V22H16V24H24V16H22V-16H24V-24H16V-22H-16V-24H-24V-16H-22V16H-24V24H-16ZM-16 16H-20V-16H-16V-20H16V-16H20V16H16V20H-16V16ZM-18 18V22H-22V18H-18ZM-22 -18V-22H-18V-18H-22ZM22 18V22H18V18H22ZM18 -18V-22H22V-18H18Z" fill="#414458"/>
+<path d="M-14 14V18H14V14H18V-14H14V-18H-14V-14H-18V14H-14Z" fill="#272935"/>
+<rect width="10" height="2" transform="matrix(-1 0 0 1 26 24)" fill="#1E2029"/>
+<rect width="16" height="2" transform="matrix(-1 0 0 1 16 22)" fill="#1E2029"/>
+<rect width="10" height="2" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 26 26)" fill="#1E2029"/>
+<rect width="16" height="2" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 24 16)" fill="#1E2029"/>
+<rect width="16" height="2" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 20 16)" fill="#1E2029"/>
+<rect width="2" height="4" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 18 16)" fill="#1E2029"/>
+<rect width="2" height="16" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 16 20)" fill="#1E2029"/>
+<rect width="4" height="2" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 16 20)" fill="#1E2029"/>
+<rect width="4" height="4" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 22 22)" fill="#1E2029"/>
+</g>
+<defs>
+<clipPath id="clip0_151_22507">
+<rect width="26" height="26" fill="white" transform="matrix(-1 0 0 -1 26 26)"/>
+</clipPath>
+</defs>
+</svg>

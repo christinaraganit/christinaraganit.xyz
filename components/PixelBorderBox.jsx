@@ -57,6 +57,28 @@ const borderMap = {
         bottomRight: "/border/bottom-right-light-blue.svg",
         content: "bg-[#323444] text-[#FFFFFF]",
     },
+    "duotone": {
+        topLeft: "/border/duotone/top-left.svg",
+        top: "/border/duotone/top-center.svg",
+        topRight: "/border/duotone/top-right.svg",
+        left: "/border/duotone/left-center.svg",
+        right: "/border/duotone/right-center.svg",
+        bottomLeft: "/border/duotone/bottom-left.svg",
+        bottom: "/border/duotone/bottom-center.svg",
+        bottomRight: "/border/duotone/bottom-right.svg",
+        content: "bg-[#272935] text-[#FFFFFF]",
+    },
+    "duotone-outlined": {
+        topLeft: "/border/duotone/top-left-outlined.svg",
+        top: "/border/duotone/top-center-outlined.svg",
+        topRight: "/border/duotone/top-right-outlined.svg",
+        left: "/border/duotone/left-center-outlined.svg",
+        right: "/border/duotone/right-center-outlined.svg",
+        bottomLeft: "/border/duotone/bottom-left-outlined.svg",
+        bottom: "/border/duotone/bottom-center-outlined.svg",
+        bottomRight: "/border/duotone/bottom-right-outlined.svg",
+        content: "bg-[#272935] text-[#FFFFFF]",
+    },
     selected: {
         topLeft: "/border/selected-top-left.svg",
         top: "/border/selected-center.svg",
@@ -103,7 +125,14 @@ export default function PixelBorderBox({
     }
 
     // Border image size
-    const px = size === "sm" ? 8 : 24;
+    let px;
+    if (size === "lg") {
+        px = 32;
+    } else if (size === "md") {
+        px = 24;
+    } else if (size === "sm") {
+        px = 4;
+    }
 
     // Handlers for hover/touch
     const handlePointerDown = (e) => {

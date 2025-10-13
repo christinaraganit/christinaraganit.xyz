@@ -37,7 +37,7 @@
 :root {
   --background: #1E2029;
   --foreground: #FFFFFF;
-  scrollbar-gutter: stable both-edges;
+  scrollbar-gutter: stable;
 }
 
 html {
@@ -63,6 +63,14 @@ html {
 
 button.cursor-gauntlet {
   cursor: url("/gauntlet-cursor.png"), pointer;
+}
+
+.cursor-text {
+  cursor: url("/cursor-typing.png"), text;
+}
+
+.cursor-lock {
+  cursor: url("/cursor-lock.png"), pointer;
 }
 
 body {
