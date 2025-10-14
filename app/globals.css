@@ -73,6 +73,10 @@ button.cursor-gauntlet {
   cursor: url("/cursor-lock.png"), pointer;
 }
 
+.cursor-in-progress {
+  cursor: url("/cursor-in-progress.png"), pointer;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

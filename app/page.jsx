@@ -14,7 +14,7 @@ export default function Home() {
       <p className="body-lg text-center max-w-2xl text-balance">Open to product design <span className="ampersand">&</span> design engineering internships for Summer 2026!</p>
     </section>
 
-    <section id="projects" className="max-w-[100rem] grid xl:grid-cols-2 gap-y-8 gap-x-8">
+    <section id="projects" className="max-w-[100rem] grid md:grid-cols-2 gap-y-8 gap-x-8">
       {/* <Project role={"Product Design"} title={"Extending ChatGPT's memory into the real world with Tomo, a new consumer AI hardware device"} year={"2025"}>
         <video autoPlay loop muted className="h-full w-auto">
           <source src="/projects/gradient.mp4" className="h-full w-auto"></source>
@@ -25,25 +25,25 @@ export default function Home() {
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
 
-      <Project role={"Product Design"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"Shipped 2025"} link={"/projects/asana-team-page"}>
-        <video src="/projects/curated-work.mp4" loop muted autoPlay />
+      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+        <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
       </Project>
-
-      {/* <Project role={"Product Design"} title={"Shipped a 3× faster check-in system for SFU’s largest hackathon"} year={"2025"}>
-        <img src="/placeholder.png" />
-      </Project> */}
 
       <Project role={"Design Systems"} title={"Driving efficiency for design & development at Felix with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
         <img src="/projects/felix-design-system.png" draggable={false} />
       </Project>
 
-      <Project role={"Product Design"} title={"Improving mentorship for participants at Simon Fraser University's largest in-person hackathon"} year={"2024"}>
+      <Project role={"Product Design"} title={"Improving mentorship for participants at SFU's largest in-person hackathon"} year={"2024"} link={"/projects/hackerhelper"}>
         <img src="/projects/hackerhelper-thumbnail.png" draggable={false} />
       </Project>
 
-      <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
-        <img src="/projects/ddw-thumbnail.png" draggable={false} />
+      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+        <img src="/projects/ddw-thumbnail.png" draggable={false} className="cursor-in-progress" />
       </Project>
+
+      {/* <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+        <img src="/projects/ddw-thumbnail.png" draggable={false} className="cursor-in-progress" />
+      </Project> */}
 
     </section>
   </main>)

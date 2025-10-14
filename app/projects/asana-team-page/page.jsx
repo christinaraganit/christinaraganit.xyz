@@ -166,7 +166,8 @@ export default function TeamPage() {
                             </p>
                             <p className="mb-2">To make sure users navigating by keyboard could move through elements logically… I mapped out the intended focus sequence, defined clear heading hierarchies, and ensured that all interactive elements had clear and descriptive labels.</p>
 
-                            <img src="/placeholder.png"></img>
+                            <img src="/projects/curated-work/focus-order.png"></img>
+                            <img src="/projects/curated-work/labels-and-heading-levels.png"></img>
                         </div>
                     </div>
                 </section>

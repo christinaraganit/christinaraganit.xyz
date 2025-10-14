@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Christina Raganit",
-  description: "Christina is a product designer who writes code and thinks in systems. This is her portfolio.",
+  description: "Christina is a product designer who thrives in highly-complex problem areas that demand deep systems thinking. Interested in designing developer tools.",
 };
 
 export default function RootLayout({ children }) {

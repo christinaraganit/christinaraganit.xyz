@@ -51,7 +51,7 @@ export default async function CustomOnboardingInOtto() {
                             <div className="md:col-span-2">
                                 <h2 className="headline-sm mb-1.5">Team</h2>
                                 <span className="body-sm">Christina Raganit (Lead Designer)<br></br>
-                                    Chuiee Yang (Design Mentor)
+                                    Chuiee Yang (Design Mentor)<br></br>
                                 </span>
                             </div>
                             <div>
@@ -152,7 +152,7 @@ export default async function CustomOnboardingInOtto() {
                                 Through OTTO, CSMs wouldn’t need to be Admins at the organizations they work with, since the internal tool already obfuscates sensitive data.
                             </p>
                         </div>
-                        <video autoPlay loop muted controls>
+                        <video playsInline autoPlay loop muted controls>
                             <source src="/projects/otto/flow.mp4"></source>
                         </video>
                     </section>
@@ -193,7 +193,7 @@ export default async function CustomOnboardingInOtto() {
                             <p className="body-xl text-balance mb-6">
                                 I landed on a dynamic summary where dropdown groups begin collapsed, and only expand when the CSM interacts with its associated step.
                             </p>
-                            <video autoPlay loop muted controls>
+                            <video playsInline autoPlay loop muted controls>
                                 <source src="/projects/otto/interaction-behavior.mp4"></source>
                             </video>
                         </section>
@@ -238,7 +238,7 @@ export default async function CustomOnboardingInOtto() {
                                 I proposed new functionality in OTTO when I recognized that they contributed to my goal of creating a welcoming first experience for new users of Asana and helping them recognize how the platform can meet their unique needs.
                             </p>
                             <p className="body mb-6">The functionality was for custom logo upload and a HEX code input for setting and previewing a background color in the welcome message.</p>
-                            <video autoPlay loop controls muted>
+                            <video playsInline autoPlay loop controls muted>
                                 <source src="/projects/otto/trimmed-color.mp4"></source>
                             </video>
                         </section>
