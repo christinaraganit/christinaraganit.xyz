@@ -25,7 +25,7 @@ export default function Home() {
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
 
-      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+      <Project role={"Case Study in Progress"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2023"}>
         <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
       </Project>
 
@@ -46,5 +46,5 @@ export default function Home() {
       </Project> */}
 
     </section>
-  </main>)
+  </main >)
 }
