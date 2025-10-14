@@ -4,7 +4,7 @@ export default function Album({ albumCover, albumTitle, artist, releaseYear }) {
             <div className="flex flex-row">
                 <img src={albumCover} className="h-[96px] w-[96px] z-12"></img>
                 <div className="relative h-[96px] w-[96px] -ml-8">
-                    <img src={"/library/record-new.png"} className="absolute h-[96px] w-[96px] z-10"></img>
+                    <img src={"/library/record-new.svg"} className="absolute h-[96px] w-[96px] z-10"></img>
                     {/* <img src={albumCover} className="h-[36px] w-[36px] absolute top-[30px] left-[30px] z-1"></img> */}
                 </div>
             </div>

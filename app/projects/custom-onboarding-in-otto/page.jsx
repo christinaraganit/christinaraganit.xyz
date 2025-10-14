@@ -87,7 +87,7 @@ export default async function CustomOnboardingInOtto() {
 
                     <section>
                         <div className="grid gap-6 lg:grid-cols-2 items-center">
-                            <p className="body-xl">The ideal onboarding experience to Asana looks different for every team. When organizations rely on a single generic flow, employees fail to see Asana’s value, and adoption suffers.</p>
+                            <p className="body-xl">Asana already enables Admins to create Custom Onboarding; however, their heavy workloads often keep them from setting these flows up.</p>
                             <img src="/projects/otto/admin-problem.png"></img>
                         </div>
                     </section>
