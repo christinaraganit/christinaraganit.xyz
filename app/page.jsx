@@ -25,16 +25,16 @@ export default function Home() {
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
 
-      <Project role={"Case Study in Progress"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2023"}>
-        <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
-      </Project>
-
-      <Project role={"Design Systems"} title={"Driving efficiency for design & development at Felix with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
+      <Project role={"Design Systems"} title={"Driving efficiency for design & development teams at Felix Payment Systems with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
         <img src="/projects/felix-design-system.png" draggable={false} />
       </Project>
 
-      <Project role={"Product Design"} title={"Improving mentorship for participants at SFU's largest in-person hackathon"} year={"2024"} link={"/projects/hackerhelper"}>
+      <Project role={"Product Design"} title={"Improving the hacker-mentor experience at Simon Fraser University's largest in-person hackathon"} year={"2024"} link={"/projects/hackerhelper"}>
         <img src="/projects/hackerhelper-thumbnail.png" draggable={false} />
+      </Project>
+
+      <Project role={"Case Study in Progress"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2023"}>
+        <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
       </Project>
 
       <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>

@@ -106,7 +106,7 @@ export default function Lore() {
                             <InventoryBox icon="/inventory/cookie.svg" name="A chocolate chip cookie
 " description={"It's quite crumbly. She must be saving it for later."} />
                             <InventoryBox icon="/inventory/mouse.svg" name={"A Logitech Lift Vertical mouse"} description={"It's a strange form factor, but it helps with her wrist pain."} />
-                            <InventoryBox icon="/inventory/camera.svg" name={"A digicam"} description={"The settings are entirely in Japanese. Christina doesn't speak Japanese."} />
+                            <InventoryBox icon="/inventory/camera.svg" name={"A digicam"} description={"The settings are entirely in Japanese. Thing is, Christina doesn't speak Japanese."} />
                             <InventoryBox icon={"/inventory/question-blue.svg"} name={"An internship for Summer 2026"} description={"Looks like there's nothing here yet. ...Maybe you could change that?"} />
                         </div>
                     </div>
