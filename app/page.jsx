@@ -25,7 +25,7 @@ export default function Home() {
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
 
-      <Project role={"Design Systems"} title={"Driving efficiency for design & development teams at Felix Payment Systems with a cross-platform design system"} year={"Shipped 2022"} link={"/projects/felix-design-system"}>
+      <Project role={"Design Systems"} title={"Driving efficiency for design & development teams at Felix Payment Systems with a cross-platform design system"} year={"Shipped 2023"} link={"/projects/felix-design-system"}>
         <img src="/projects/felix-design-system.png" draggable={false} />
       </Project>
 
@@ -33,12 +33,19 @@ export default function Home() {
         <img src="/projects/hackerhelper-thumbnail.png" draggable={false} />
       </Project>
 
-      <Project role={"Case Study in Progress"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2023"}>
+      <Project role={"Case Study in Progress"} title={"Designed & shipped improvements to Curated Work in Asana’s Team page"} year={"2025"}>
         <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
       </Project>
 
       <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
         <img src="/projects/ddw-thumbnail.png" draggable={false} className="cursor-in-progress" />
+      </Project>
+
+      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+        <div className="aspect-video flex items-center justify-center">
+          <video src="/projects/gradient.mp4" loop muted autoPlay className="aspect-video relative object-cover w-auto cursor-in-progress" />
+          <img src={"/projects/OpenAI-white-wordmark.svg"} className="absolute w-[20%]"></img>
+        </div>
       </Project>
 
       {/* <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
