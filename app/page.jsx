@@ -2,7 +2,6 @@
 
 import "./globals.css";
 import Project from "../components/Project";
-
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -15,12 +14,6 @@ export default function Home() {
     </section>
 
     <section id="projects" className="max-w-[100rem] grid md:grid-cols-2 gap-y-8 gap-x-8">
-      {/* <Project role={"Product Design"} title={"Extending ChatGPT's memory into the real world with Tomo, a new consumer AI hardware device"} year={"2025"}>
-        <video autoPlay loop muted className="h-full w-auto">
-          <source src="/projects/gradient.mp4" className="h-full w-auto"></source>
-        </video>
-      </Project> */}
-
       <Project role={"Product Design"} passwordProtected={true} title={"Empowering internal teams at Asana to drive user adoption with Custom Onboarding"} year={"Shipping 2026"} link="/projects/custom-onboarding-in-otto">
         <motion.img src="/projects/asana-logo.png" layoutId="otto-hero" className="cursor-lock" id="otto-hero" draggable={false} />
       </Project>
@@ -37,21 +30,16 @@ export default function Home() {
         <video src="/projects/curated-work.mp4" loop muted autoPlay className="cursor-in-progress" />
       </Project>
 
-      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+      {/* <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
         <img src="/projects/ddw-thumbnail.png" draggable={false} className="cursor-in-progress" />
-      </Project>
+      </Project> */}
 
-      <Project role={"Case Study in Progress"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+      {/* <Project role={"Case Study in Progress"} title={"Extending ChatGPT's memory feature to the real world with a hardware wearable"} year={"2025"}>
         <div className="aspect-video flex items-center justify-center">
           <video src="/projects/gradient.mp4" loop muted autoPlay className="aspect-video relative object-cover w-auto cursor-in-progress" />
           <img src={"/projects/OpenAI-white-wordmark.svg"} className="absolute w-[20%]"></img>
         </div>
-      </Project>
-
-      {/* <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Branding</span>} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
-        <img src="/projects/ddw-thumbnail.png" draggable={false} className="cursor-in-progress" />
       </Project> */}
-
     </section>
   </main >)
 }

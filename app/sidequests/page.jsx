@@ -12,7 +12,7 @@ export default function Sidequests() {
         </section>
 
 
-        <section id="projects" className="max-w-[100rem] grid xl:grid-cols-2 gap-y-8 gap-x-8">
+        <section id="sidequests" className="max-w-[100rem] grid md:grid-cols-2 gap-y-8 gap-x-8">
             <Project role={"Frontend Development"} title={"Built an MBTI quiz website for Vancouver’s largest-growing hotpot chain, garnering 14k visitors at launch"} year={"2025"}>
                 <img src="/projects/big-way-quiz.png"></img>
             </Project>
@@ -27,6 +27,10 @@ export default function Sidequests() {
                 <video playsInline muted autoPlay loop>
                     <source src="/projects/reusables-vending-machine.mp4"></source>
                 </video>
+            </Project>
+
+            <Project role={"Visual Design"} title={"Built a design direction and prototyped a pre-event microsite for Amsterdam-based Dutch Design Week"} year={"2023"}>
+                <img src="/projects/ddw-thumbnail.png" draggable={false} />
             </Project>
 
             <Project role={<span>Visual Design <span className="ampersand-sm">&</span> Prototyping</span>} title={"Won 2nd place at CreateSC 2025 by digitizing the Tiktok viral game Hear Me Out Cake"} year={"2025"}>
