@@ -22,7 +22,7 @@ export default async function CustomOnboardingInOtto() {
                         </Link>
                     </div>
                     <div className="h-full w-full flex-1 items-center justify-center flex">
-                        <PasswordDialog url="/projects/custom-onboarding-in-otto" />
+                        <PasswordDialog url="/projects/custom-onboarding-in-otto" title="This case study is in progres." paragraph="I've signed an NDA, so I can't share this work publicly. Please enter the correct password to proceed." />
                     </div>
                 </section>
 
