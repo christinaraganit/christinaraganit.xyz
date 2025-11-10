@@ -17,7 +17,7 @@ export default function Wonder() {
                     </div>
 
                     <section id="overview" className="flex flex-col gap-4">
-                        <h1 className="large-title mb-6">Building AI-powered workflows for design tool Wonder</h1>
+                        <h1 className="large-title mb-6">Designing the future of human-AI collaboration with Wonder</h1>
                         <div className="grid gap-8 md:grid-cols-3">
                             <div>
                                 <h2 className="headline-sm mb-1.5">Team</h2>
@@ -40,7 +40,7 @@ export default function Wonder() {
 
                         <video src="/projects/wonder-thumbnail.mp4" loop muted autoPlay className="my-2" />
 
-                        <p className="body-lg">During these 8 weeks, I'll be working with the team at Wonder and the design studio Spacing to design and prototype AI features that seamlessly integrate into Wonder's design tool. Our goal is to find ways that Wonder can differentiate itself in the competitive design tool market by leveraging AI to enhance user productivity and creativity.
+                        <p className="body-lg">During these 8 weeks, I'll be working with the team at Wonder and the design studio Spacing to ideate and prototype AI features that seamlessly integrate into Wonder's design tool. Our goal is to find ways that Wonder can differentiate itself in the competitive design tool market by leveraging AI to enhance user productivity and creativity.
                         </p>
 
                         <p className="body-lg">Currently exploring: agentic workflows, context-aware design assistance, and how mechanics from multiplayer games can be applied to AI-human design collaboration.
