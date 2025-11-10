@@ -17,7 +17,7 @@ export default function Wonder() {
                     </div>
 
                     <section id="overview" className="flex flex-col gap-4">
-                        <h1 className="large-title mb-6">Designing the future of human-AI collaboration with Wonder</h1>
+                        <h1 className="large-title mb-6">Designing the future of human-AI collaboration in design workflows with Wonder</h1>
                         <div className="grid gap-8 md:grid-cols-3">
                             <div>
                                 <h2 className="headline-sm mb-1.5">Team</h2>

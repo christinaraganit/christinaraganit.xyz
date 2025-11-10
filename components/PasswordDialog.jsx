@@ -31,7 +31,7 @@ export default function PasswordDialog({ buttonText, url, title, paragraph, high
   return (
     <div className="max-w-3xl w-full flex flex-col items-center">
       <PixelBorderBox color="duotone-outlined" size="lg" className="relative top-12 h-24 w-24 aspect-square">
-        <img src={getImageSrc()} className="scale-105" draggable={false} />
+        <img src={getImageSrc()} className="scale-125" draggable={false} />
       </PixelBorderBox>
 
       <PixelBorderBox size="lg" color="duotone" className="w-full">
