@@ -15,7 +15,7 @@ export default function Home() {
 
     <section id="projects" className="max-w-[100rem] grid md:grid-cols-2 gap-y-8 gap-x-8">
       <Project role={"In Progress"} title={"Designing the future of human-AI collaboration with Wonder"} year={"2025"} link={"/projects/wonder"}>
-        <video src="/projects/wonder-thumbnail.mp4" loop muted autoPlay />
+        <video src="/projects/vibrant-wonder-thumbnail.mp4" loop muted autoPlay />
       </Project>
       {/* 
       <Project role={"Product Design"} title={"Making ChatGPT truly personal with an AI-powered wearable that remembers"} year={"2025"} link={"/projects/open-ai"}>

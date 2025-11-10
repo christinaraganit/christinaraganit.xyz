@@ -1,3 +1,5 @@
+"use client";
+
 import Divider from "../../../components/blocks/Divider";
 import Link from "next/link";
 import PasswordDialog from "../../../components/PasswordDialog";
@@ -26,7 +28,7 @@ export default function OpenAI() {
                             </div>
 
                             <div>
-                                <h2 className="headline-sm mb-1.5">Roles</h2>
+                                <h2 className="headline-sm mb-1.5">My Roles</h2>
                                 <span className="body-sm">Product Design, Visual Design, Interface Design, Interaction Design, Systems Thinking
                                 </span>
                             </div>
