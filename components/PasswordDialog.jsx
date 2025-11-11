@@ -81,7 +81,7 @@ export default function PasswordDialog({ buttonText, url, title, paragraph, high
               {buttonText && (
                 <div className="flex justify-center">
                   <a
-                    href={url}
+                    href={url} target="_blank" rel="noopener noreferrer"
                     className="focus:scale-95 cursor-gauntlet font-pixel-mono hover:bg-[#474F85] transition-all bg-[#5963A6] h-9 px-4 text-white text-2xl"
                   >
                     <span className="block mb-0.5">{buttonText}</span>

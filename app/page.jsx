@@ -18,9 +18,9 @@ export default function Home() {
         <video src="/projects/vibrant-wonder-thumbnail.mp4" loop muted autoPlay />
       </Project>
 
-      {/* <Project role={"Product Design"} title={"Making ChatGPT truly personal with an AI-powered wearable that remembers"} year={"2025"} link={"/projects/open-ai"}>
+      <Project role={"Product Design"} title={"Making ChatGPT truly personal with an AI-powered wearable that remembers"} year={"2025"} link={"/projects/open-ai"}>
         <video src="/projects/open-ai-thumbnail.mp4" loop muted autoPlay />
-      </Project> */}
+      </Project>
 
       {/* <Project role={"Product Design"} title={"Designing a lightweight, cross-platform feedback delivery system in Figma"} year={"2025"}>
         <img src="/projects/figma-feedback.png" className="aspect-video" draggable={false} />
@@ -35,7 +35,7 @@ export default function Home() {
       </Project>
 
       <Project role={"Product Design"} title={"Improving mentorship at SFU's largest in-person hackathon"} year={"2024"} link={"/projects/hackerhelper"}>
-        <img src="/projects/hackerhelper-thumbnail.png" draggable={false} />
+        <img src="/projects/hackerhelper-yellow.png" draggable={false} />
       </Project>
 
       <Project role={"Case Study in Progress"} title={"Improving Curated Work in Asana’s Team page"} year={"Shipped 2025"}>
